@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .product-card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            text-align: center;
+            padding: 15px;
+            transition: transform 0.3s ease;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .product-card img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .product-name {
+            font-size: 18px;
+            font-weight: bold;
+            margin: 10px 0 5px;
+        }
+
+        .product-price {
+            font-size: 16px;
+            color: #27ae60;
+            margin-bottom: 15px;
+        }
+
+        .button-container {
+            display: flex;
+            gap: 8px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 10px;
+        }
+
+        .buy-now-btn {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 25px;
+            font-size: 14px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+            flex: 1;
+            min-width: 90px;
+            max-width: 120px;
+        }
+
+        .buy-now-btn:hover {
+            background-color: #218838;
+            color: white;
+            text-decoration: none;
+        }
+
+        .add-to-cart-btn {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 25px;
+            font-size: 14px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+            flex: 1;
+            min-width: 90px;
+            max-width: 120px;
+        }
+
+        .add-to-cart-btn:hover {
+            background-color: #0056b3;
+            color: white;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+        <div class="container">
+
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="/greenbitelogo.jpg" alt="Logo" class="me-2 bg-0"
+                    style="height:40px; width:40px; object-fit:cover;">
+                <span class="text fw-bold fs-3">GreenBites</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active fw-semibold" href="product.html">Products</a></li>
+                    <li class="nav-item"><a class="nav-link" href="checkout.html">Checkout</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="product-grid">
+        <div class="product-card">
+            <img src="/images/product-thumb-1.png" alt="Pizza">
+            <div class="product-name">Cheese Pizza</div>
+            <div class="product-price">$8.99</div>
+            <div class="button-container">
+                <a href="checkout.html" class="buy-now-btn">Buy Now</a>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="/images/product-thumb-10.png" alt="Burger">
+            <div class="product-name">Beef Burger</div>
+            <div class="product-price">$5.49</div>
+            <div class="button-container">
+                <a href="checkout.html" class="buy-now-btn">Buy Now</a>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="/images/product-thumb-11.png" alt="Salad">
+            <div class="product-name">Caesar Salad</div>
+            <div class="product-price">$4.29</div>
+            <div class="button-container">
+                <a href="checkout.html" class="buy-now-btn">Buy Now</a>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="/images/product-thumb-12.png" alt="Ice Cream">
+            <div class="product-name">Vanilla Ice Cream</div>
+            <div class="product-price">$3.50</div>
+            <div class="button-container">
+                <a href="checkout.html" class="buy-now-btn">Buy Now</a>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="product-grid">
+        <div class="product-card">
+            <img src="/images/product-thumb-1.png" alt="Pizza">
+            <div class="product-name">Cheese Pizza</div>
+            <div class="product-price">$8.99</div>
+            <a href="checkout.html" class="buy-now-btn">Buy Now</a>
+            <button class="add-to-cart-btn">Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="/images/product-thumb-10.png" alt="Burger">
+            <div class="product-name">Beef Burger</div>
+            <div class="product-price">$5.49</div>
+            <a href="checkout.html" class="buy-now-btn">Buy Now</a>
+            <button class="add-to-cart-btn">Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="/images/product-thumb-11.png" alt="Salad">
+            <div class="product-name">Caesar Salad</div>
+            <div class="product-price">$4.29</div>
+            <a href="checkout.html" class="buy-now-btn">Buy Now</a>
+            <button class="add-to-cart-btn">Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="/images/product-thumb-12.png" alt="Ice Cream">
+            <div class="product-name">Vanilla Ice Cream</div>
+            <div class="product-price">$3.50</div>
+            <a href="checkout.html" class="buy-now-btn">Buy Now</a>
+            <button class="add-to-cart-btn">Add to Cart</button>
+        </div>
+    </div>
+
+    <div class="product-grid">
+        <div class="product-card">
+            <img src="/images/product-thumb-1.png" alt="Pizza">
+            <div class="product-name">Cheese Pizza</div>
+            <div class="product-price">$8.99</div>
+            <a href="checkout.html" class="buy-now-btn">Buy Now</a>
+            <button class="add-to-cart-btn">Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="/images/product-thumb-10.png" alt="Burger">
+            <div class="product-name">Beef Burger</div>
+            <div class="product-price">$5.49</div>
+            <a href="checkout.html" class="buy-now-btn">Buy Now</a>
+            <button class="add-to-cart-btn">Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="/images/product-thumb-11.png" alt="Salad">
+            <div class="product-name">Caesar Salad</div>
+            <div class="product-price">$4.29</div>
+            <a href="checkout.html" class="buy-now-btn">Buy Now</a>
+            <button class="add-to-cart-btn">Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="/images/product-thumb-12.png" alt="Ice Cream">
+            <div class="product-name">Vanilla Ice Cream</div>
+            <div class="product-price">$3.50</div>
+            <a href="checkout.html" class="buy-now-btn">Buy Now</a>
+            <button class="add-to-cart-btn">Add to Cart</button>
+        </div>
+    </div>
+
+    <div class="product-grid">
+        <div class="product-card">
+            <img src="/images/product-thumb-13.png" alt="Pizza">
+            <div class="product-name">Cheese Pizza</div>
+            <div class="product-price">$8.99</div>
+            <a href="checkout.html" class="buy-now-btn">Buy Now</a>
+            <button class="add-to-cart-btn">Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="/images/product-thumb-14.png" alt="Burger">
+            <div class="product-name">Beef Burger</div>
+            <div class="product-price">$5.49</div>
+            <a href="checkout.html" class="buy-now-btn">Buy Now</a>
+            <button class="add-to-cart-btn">Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="/images/product-thumb-15.png" alt="Salad">
+            <div class="product-name">Caesar Salad</div>
+            <div class="product-price">$4.29</div>
+            <a href="checkout.html" class="buy-now-btn">Buy Now</a>
+            <button class="add-to-cart-btn">Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="/images/product-thumb-16.png" alt="Ice Cream">
+            <div class="product-name">Vanilla Ice Cream</div>
+            <div class="product-price">$3.50</div>
+            <a href="checkout.html" class="buy-now-btn">Buy Now</a>
+            <button class="add-to-cart-btn">Add to Cart</button>
+        </div>
+    </div>
+
+    <div class="product-grid">
+        <div class="product-card">
+            <img src="/images/product-thumb-17.png" alt="Pizza">
+            <div class="product-name">Cheese Pizza</div>
+            <div class="product-price">$8.99</div>
+            <a href="checkout.html" class="buy-now-btn">Buy Now</a>
+            <button class="add-to-cart-btn">Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="/images/product-thumb-18.png" alt="Burger">
+            <div class="product-name">Beef Burger</div>
+            <div class="product-price">$5.49</div>
+            <a href="checkout.html" class="buy-now-btn">Buy Now</a>
+            <button class="add-to-cart-btn">Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="/images/product-thumb-19.png" alt="Salad">
+            <div class="product-name">Caesar Salad</div>
+            <div class="product-price">$4.29</div>
+            <a href="checkout.html" class="buy-now-btn">Buy Now</a>
+            <button class="add-to-cart-btn">Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="/images/product-thumb-20.png" alt="Ice Cream">
+            <div class="product-name">Vanilla Ice Cream</div>
+            <div class="product-price">$3.50</div>
+            <a href="checkout.html" class="buy-now-btn">Buy Now</a>
+            <button class="add-to-cart-btn">Add to Cart</button>
+        </div>
+    </div>
+
+
+    <!-- Footer -->
+    <footer style="background-color: #28a745; color: white; padding: 30px 0; margin-top: 50px;">
+        <div style="max-width: 1200px; margin: 0 auto; text-align: center;">
+            <h3 style="margin-bottom: 20px;">Connect With Us</h3>
+            <div style="display: flex; justify-content: center; gap: 30px; flex-wrap: wrap;">
+                <a href="https://twitter.com" target="_blank"
+                    style="color: white; text-decoration: none; font-size: 18px;">
+                    <div style="display: flex; align-items: center; gap: 8px;">
+                   <i class="fa-brands fa-twitter" style="font-size: 18px;">twitter</i>
+                    </div>
+                </a>
+                <a href="https://instagram.com" target="_blank"
+                    style="color: white; text-decoration: none; font-size: 18px;">
+                    <div style="display: flex; align-items: center; gap: 8px;">
+                        <i class="fa-brands fa-instagram" style="font-size: 18px;">instagram</i>
+                    </div>
+                </a>
+                <a href="https://wa.me/" target="_blank" style="color: white; text-decoration: none; font-size: 18px;">
+                    <div style="display: flex; align-items: center; gap: 8px;">
+                        <i class="fa-brands fa-whatsapp" style="font-size: 18px;">whatsapp</i>
+                    </div>
+                </a>
+            </div>
+            <p style="margin-top: 20px; font-size: 14px;">&copy; 2025 GreenBites. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
